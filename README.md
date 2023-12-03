@@ -20,7 +20,7 @@ From your terminal:
 npm install
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+
 
 ## Deployment
 

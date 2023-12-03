@@ -117,12 +117,3 @@ Response:
 { error: 'Book not found' }
 
 ```
-
-
-
-
-
-
-
-
-## POST

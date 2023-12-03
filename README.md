@@ -1,4 +1,40 @@
 # API_Books
+
+This repo is a backend project which consists of building a RESTful API for a library system, incorporating three increasingly complex endpoints. The first endpoint involves retrieving all books from the database with proper error handling. The second endpoint requires adding a new book, necessitating validation, correct database insertion, and error handling for duplicate entries. The third endpoint involves updating the details of a specific book, including identification, validation, database update, and error handling for non-existent books
+## Environment variables
+
+Please create a `.env` file in the root directory of this repo and place the following two environment variables in it:
+
+```
+MONGODB_URI=
+PORT=
+```
+
+I used MongoDB database to store data. So give MongoDB URL for conecting to your database.
+
+## Installing dependencies
+
+From your terminal:
+
+```sh
+npm install
+```
+
+This starts your app in development mode, rebuilding assets on file changes.
+
+## Deployment
+
+
+To run the app in production mode:
+
+```sh
+npm start
+```
+Make sure you have your mongodb database working.
+
+### Testing
+To test the API endpoints , I used postman.
+
 # API endpoints
 
 Three API end points</br>
@@ -53,12 +89,36 @@ Response :
 }
 ```
 ## PUT
-**Response**
-
 Endpoint 3: Update Book Details</br>
 Implement an endpoint that allows updating the details of a specific book in the library.</br>
 Endpoint: PUT /api/books/{id}</br>
 Request Body: JSON object with updated book details.</br>
+**Response**
+```
+RequestBody :
+{
+    "title": "Book 3",
+    "author": "Author 3",
+    "publishedYear": 2023
+}
+Response:
+{
+    "title": "Book 3",
+    "author": "Author 3",
+    "publishedYear": 2023,
+    "_id": "656b535f2801ae797d473a0d",
+    "__v": 0
+}
+if any error in request body then
+Response:
+{ error: 'Incomplete book details' }
+if book not found then 
+Response:
+{ error: 'Book not found' }
+
+```
+
+
 
 
 

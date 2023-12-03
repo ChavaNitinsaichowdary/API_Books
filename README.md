@@ -1,9 +1,9 @@
 # API_Books
 # API endpoints
-Three API end points
-Endpoint 1: Retrieve All Books
-Implement an endpoint that retrieves a list of all books in the library from the database.
 
+Three API end points</br>
+
+Endpoint 1: Retrieve All Books </br>
 Endpoint: GET /api/books
 Evaluation Criteria:
 Correct retrieval of all books from the database.
@@ -25,7 +25,7 @@ Request Body: JSON object with updated book details.
 
 ## GET
 **Response** 
-Get request gives data of all books in json format
+Get request gives data of all books in json format</br>
 Successfull response looks like below:
 books : [
   { title: 'Book 1', author: 'Author 1', publishedYear: 2020 },

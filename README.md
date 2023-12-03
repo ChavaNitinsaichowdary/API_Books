@@ -20,12 +20,7 @@ From your terminal:
 npm install
 ```
 
-
-
-## Deployment
-
-
-To run the app in production mode:
+To run the app in your local computer:
 
 ```sh
 npm start
